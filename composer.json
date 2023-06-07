@@ -1,0 +1,16 @@
+{
+  "name": "kader/give-bkash",
+  "autoload": {
+    "psr-4": {
+      "Kader\\GiveBkash\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "beyond88",
+      "email": "muhin.cse.diu@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
