@@ -11,8 +11,26 @@
       "email": "muhin.cse.diu@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
-    "appsero/client": "dev-master"
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "post-install-cmd": [
+      "@install-codestandards"
+    ]
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpcompatibility/php-compatibility": "^9.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }

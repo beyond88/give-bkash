@@ -1,0 +1,8 @@
+{
+  "phpcs.enable": true,
+  "phpcs.standard": "WordPress",
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": 0,
+  "phpcs.showWarnings": true,
+  "phpcs.showSources": true
+}

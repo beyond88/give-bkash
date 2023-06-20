@@ -12,9 +12,10 @@
  * License URI:         http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:         give-bkash
  * Domain Path:         /languages
+ * @package 			Bkash
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if	( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
