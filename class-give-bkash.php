@@ -43,7 +43,7 @@ final class Give_Bkash {
 
         $this->define_constants();
 
-        if (!function_exists('is_plugin_active')) {
+        if ( !function_exists('is_plugin_active') ) {
             include_once(ABSPATH . 'wp-admin/includes/plugin.php');
         }
         if ( is_plugin_active( 'give/give.php' ) ) {
@@ -55,8 +55,7 @@ final class Give_Bkash {
         }
     }
 
-    public function givewp_plugin_required()
-    {
+    public function givewp_plugin_required() {
         ?>
         <script>
             (function($) {
@@ -151,8 +150,7 @@ final class Give_Bkash {
      *
      * @since 1.9.0
      */
-    public function register_service_providers()
-    {
+    public function register_service_providers() {
         // foreach ($this->service_providers as $service_provider) {
         //     give()->registerServiceProvider($service_provider);
         // }
