@@ -35,6 +35,11 @@ final class Give_Bkash {
 
     /**
      * Class constructor
+	 *
+	 * @since  1.0.0
+	 * @access private
+	 * @param  none
+	 * @return void
      */
     private function __construct() {
 
@@ -55,6 +60,14 @@ final class Give_Bkash {
         }
     }
 
+    /**
+     * Give plugin required notice
+     *
+     * @since  1.0.0
+     * @access public
+	 * @param  none
+	 * @return void
+     */
     public function givewp_plugin_required() {
         ?>
         <script>
@@ -77,6 +90,9 @@ final class Give_Bkash {
     /**
      * Initializes a singleton instance
      *
+     * @since  1.0.0
+     * @access public
+	 * @param  none
      * @return \Give_BKASH
      */
     public static function init() {
@@ -93,8 +109,10 @@ final class Give_Bkash {
     /**
      * Setup Fee Recovery.
      *
-     * @since  1.3.0
+     * @since  1.0.0
      * @access private
+	 * @param  none
+	 * @return void
      */
     private function setup() {
         add_action('before_give_init', [ $this, 'register_service_providers' ] );
@@ -103,6 +121,9 @@ final class Give_Bkash {
     /**
      * Define the required plugin constants
      *
+     * @since  1.0.0
+     * @access public
+	 * @param  none
      * @return void
      */
     public function define_constants() {
@@ -117,6 +138,9 @@ final class Give_Bkash {
     /**
      * Initialize the plugin
      *
+     * @since  1.0.0
+     * @access public
+	 * @param  none
      * @return void
      */
     public function init_plugin() {
@@ -138,17 +162,23 @@ final class Give_Bkash {
     /**
      * Do stuff upon plugin activation
      *
+     * @since  1.0.0
+     * @access public
+	 * @param  none
      * @return void
      */
     public function activate() {
-        // $installer = new Give_Bkash\Installer();
-        // $installer->run();
+        $installer = new GiveBkash\Installer();
+        $installer->run();
     }
 
     /**
      * Registers the Service Providers with GiveWP core
      *
-     * @since 1.9.0
+     * @since  1.0.0
+     * @access public
+	 * @param  none
+     * @return void
      */
     public function register_service_providers() {
         // foreach ($this->service_providers as $service_provider) {
